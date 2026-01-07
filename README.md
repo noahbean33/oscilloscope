@@ -1,8 +1,8 @@
 # Digital Oscilloscope Project
 
-Complete project files for the digital oscilloscope system developed throughout "Architecting High-Performance Embedded Systems" by Jim Ledin.
+Complete project files for the digital oscilloscope system.
 
-## 📋 Project Overview
+## Project Overview
 
 This is a complete high-performance digital oscilloscope implementation featuring:
 - **High-speed analog data acquisition** using ADC
@@ -11,7 +11,7 @@ This is a complete high-performance digital oscilloscope implementation featurin
 - **Custom PCB design** with professional circuit layout
 - **Embedded firmware** running on MicroBlaze soft processor
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 oscilloscope_project/
@@ -36,7 +36,7 @@ oscilloscope_project/
 └── README.md                  # This file
 ```
 
-## 🛠️ Components
+## Components
 
 ### 1. FPGA Project (`oscilloscope-fpga/`)
 **Purpose**: Implements high-speed digital logic for ADC interface and data processing
@@ -111,7 +111,7 @@ oscilloscope_project/
    - Add `Footprints.pretty/` directory as a project library
 4. Open schematic or PCB editor
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -184,7 +184,7 @@ If you want to build the custom oscilloscope circuit:
    - Use reflow soldering for SMT components
    - Hand solder through-hole components
 
-## 📊 System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -211,7 +211,7 @@ If you want to build the custom oscilloscope circuit:
 5. **MicroBlaze** - Signal processing and control
 6. **Output** - Display via UART/interface
 
-## 🔧 Configuration
+## Configuration
 
 ### FPGA Clock Configuration
 - System clock: Typically 100 MHz from Arty board
@@ -223,19 +223,7 @@ If you want to build the custom oscilloscope circuit:
 - ADC sample rate: Configured in firmware
 - Buffer sizes: Adjustable in source code
 
-## 📝 Version Information
-
-**FPGA & Software**: Chapter 8 versions (most complete implementation)
-- Includes hardware bring-up validation
-- Enhanced I/O testing
-- Full ADC interface implementation
-
-**Circuit Design**: Chapter 6 version
-- Complete schematic and PCB layout
-- Production-ready Gerber files
-- Bill of materials included
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Vivado Path Length Issues (Windows)
 - Use `set_drive_letter.bat` to create shorter paths
@@ -257,41 +245,3 @@ If you want to build the custom oscilloscope circuit:
 - Ensure hardware platform matches FPGA design
 - Regenerate BSP (Board Support Package)
 - Clean and rebuild project
-
-## 📚 Reference
-
-This project is developed throughout the book chapters:
-- **Chapter 5**: Initial FPGA and software project setup
-- **Chapter 6**: Complete circuit design and PCB layout
-- **Chapter 7**: Circuit assembly techniques
-- **Chapter 8**: Hardware bring-up and testing (current versions)
-- **Chapter 9**: Firmware development best practices
-- **Chapter 10**: System testing and debugging
-
-## 📖 Documentation
-
-For detailed explanations of design decisions, algorithms, and implementation:
-- Refer to the book "Architecting High-Performance Embedded Systems"
-- See individual chapter README files in parent directory
-- Check source code comments in VHDL and C files
-
-## 🎯 Learning Objectives
-
-By working with this project, you will learn:
-- High-speed FPGA design techniques
-- Real-time embedded system development
-- Professional PCB design workflow
-- Hardware-software co-design
-- System integration and testing
-
-## ⚖️ License
-
-MIT License - Copyright (c) 2020 Packt Publishing
-
-See LICENSE file in repository root for full details.
-
----
-
-**Ready to build your own high-performance digital oscilloscope!** 🚀
-
-For questions and support, refer to the main repository README and book resources.
